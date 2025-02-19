@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, 
+body {
+    min-height: 150vh;
+    padding: 0;
+    margin: 0 0 30px 0;
+    background-color: #000000;
+    color: #ff6347;
+}
+
+.sidebar{
+    background-image:url('src/icons/fundo.png');
+    background-size: 100%;
+    color: #fff8f8;
+    border-radius: 40px;
+    padding: 14px;
+    font-weight: 300;
+}
+
+.sidebar_navigation{
+    background-color: rgba( 0, 0, 0, 0.7);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    color: whitw;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.logo img{
+   width: 15%;
+   border-radius: 50%;
+   float: right;
+   margin-block: auto;
+   overflow: hidden;
+   margin: 10px;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+.ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container_menu {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 100px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
