@@ -20,148 +20,184 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
+
+    <!-- Fonte para o cardápio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ---------------------- -->
   </head>
   <body>
-    <section>
+    <header>
       <div class="sidebar">
-        <nav class="sidebar_navigation">
+        <div class="sidebar__informations">
+          <div class="sidebar__content">
+            <div class="content__container">
+              <h1 id="principal-tittle" class="sidebar__tittles">
+                Fire Burguer Podrão
+              </h1>
+              <h2 id="secondary-tittle" class="sidebar__tittles">
+                Já pediu seu pacote da felicidade hoje?
+              </h2>
+            </div>
+            <nav class="navegation">
+              <ul class="nav-links">
+                <li id="home">
+                  <a href="index.html" target="_blank">
+                    <i class="fa fa-home"> Home </i>
+                  </a>
+                </li>
+                <li id="carrinho">
+                  <a href="https://github.com/yukitzz" target="_blank">
+                    <i class="fa fa-cart-plus"> Carrinho </i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="logo">
             <a href="#">
               <img src="src/icons/logo.png" alt="Logo" />
             </a>
           </div>
-          <ul class="nav-links">
-            <li>
-              <a href="index.html">
-                <span class="fa fa-home">
-                  <span>Home</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="fa fa-cart-plus">
-                  <span id="Carrinho">Carrinho</span>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <h1>Fire Burguer Podrão</h1>
-          <h2>Já pediu seu pacote da felicidade hoje?</h2>
-        </nav>
-      </div>
-    </section>
-    <section>
-      <div class="menu-categorias">
-        <a class="categorias" href="#todos">Todos</a>
-        <a class="categorias" href="#hamburguers">Hamburguers</a>
-        <a class="categorias" href="#acompanhamentos">Acompanhamentos</a>
-      </div>
-    </section>
-    <section>
-      <!--MENU-->
-      <div class="container_menu" id="todos">
-        <div class="hamburguers" id="hamburguers">
-          <!--ITEM 1-->
-          <div class="chessburguer menu-items">
-            <a href="" class="menu">
-              <h3>Chessburguer</h3>
-              <input type="checkbox" name="chessburguer" id="chessburguer" />
-              <img src="src/icons/chessburguer.png" alt="chessburguer" />
-              <p>
-                Um hamburguer (100% carne bovina), queijo sabor cheddar, cebola,
-                picles, maionese e pão com gergelim.
-              </p>
-              <p>R$15,00</p>
-              <button>
-                <i class="fa fa-cart-plus"></i>
-              </button>
-            </a>
-          </div>
-
-          <!--ITEM 2-->
-          <div class="hamburguerduplo menu-item">
-            <a href="" class="menu">
-              <h3>Hamburguer Duplo</h3>
-              <input
-                type="checkbox"
-                name="hamburguerduplo"
-                id="hamburguerduplo"
-              />
-              <img src="src/icons/hamburguerduplo.png" alt="hamburguerduplo" />
-              <p>
-                Dois hambúrgueres (carne 100% bovina), queijo sabor cheddar,
-                picles, cebola, e pão com gergelim.Uma explosão de sabor.
-              </p>
-              <p>R$20,00</p>
-              <button>
-                <i class="fa fa-cart-plus"></i>
-              </button>
-            </a>
-          </div>
-
-          <!--ITEM 3-->
-          <div class="crispychicken menu-item">
-            <a href="" class="menu">
-              <h3>Crispy Chicken</h3>
-              <input
-                type="checkbox"
-                name="crispy_chicken"
-                id="combo_individual"
-              />
-              <img src="src/icons/crispychicken.png" alt="crispychicken" />
-              <p>
-                Sanduiche composto por carne 100% de peito de frango com queijo
-                cheddar, temperada e empanada, maionese, alface americana e
-                tomate.
-              </p>
-              <p>R$25,00</p>
-              <button>
-                <i class="fa fa-cart-plus"></i>
-              </button>
-            </a>
-          </div>
-
-          <!--ITEM 4-->
-          <div class="chicken_duplo menu-item">
-            <a href="" class="menu">
-              <h3>Chicken Duplo</h3>
-              <input type="checkbox" name="chicken_duplo" id="chicken_duplo" />
-              <img src="src/icons/chickenduplo.png" alt="chicken_duplo" />
-              <p>
-                Sanduiche composto 2 carnes 100% de peito de frango, temperada e
-                empanada, maionese, alface americana e tomate.
-              </p>
-              <p>R$30,00</p>
-              <button>
-                <i class="fa fa-cart-plus"></i>
-              </button>
-            </a>
-          </div>
-
-          <!--ITEM 5-->
-          <div class="hamburgue_onionrings menu-item">
-            <a href="" class="menu">
-              <h3>Hamburguer Cebola</h3>
-              <input
-                type="checkbox"
-                name="hamburgue_onionrings"
-                id="hamburgue_onionrings"
-              />
-              <img src="src/icons/onionrings.png" alt="hamburguer_onionrings" />
-              <p>
-                Pão com gergelim, um suculento hambúrguer de pura carne
-                bovina,molho barbecue, 6 deliciosas onion rings, molho de queijo
-                e maionese.
-              </p>
-              <p>30,00</p>
-              <button>
-                <i class="fa fa-cart-plus"></i>
-              </button>
-            </a>
-          </div>
         </div>
       </div>
-    </section>
+    </header>
+    <main>
+      <section class="secao-categorias">
+        <div class="menu-categorias">
+          <a class="categorias" href="#todos">Tudo</a>
+          <a class="categorias" href="#hamburguers">Hambúrguers</a>
+          <a class="categorias" href="#acompanhamentos">Acompanhamentos</a>
+        </div>
+      </section>
+      <section>
+        <!--MENU-->
+        <div class="container_menu" id="todos">
+          <div class="hamburguers" id="hamburguers">
+            <!--ITEM 1-->
+            <div class="chessburguer menu-item">
+              <a href="#" class="menu">
+                <div class="menu-content">
+                  <h3>Chessburguer</h3>
+                  <img src="src/icons/chessburguer.png" alt="chessbúrguer" />
+                  <p>
+                    Um hamburguer (100% carne bovina), queijo sabor cheddar, cebola,
+                    picles, maionese e pão com gergelim.
+                  </p>
+                  <p><span>R$</span>15,00</p>
+                </div>
+                <div class="opcoes-compra">
+                  <button>
+                    <i class="fa fa-cart-plus"></i>
+                  </button>
+                  <input type="checkbox" name="chessburguer" id="chessburguer" />
+                </div>
+              </a>
+            </div>
+            <!--ITEM 2-->
+            <div class="hamburguerduplo menu-item">
+              <a href="#" class="menu">
+                <div class="menu-content">
+                  <h3>Hamburguer Duplo</h3>
+                  <img src="src/icons/hamburguerduplo.png" alt="hamburguerduplo" />
+                  <p>
+                    Dois hambúrgueres (carne 100% bovina), queijo sabor cheddar,
+                    picles, cebola, e pão com gergelim.Uma explosão de sabor.
+                  </p>
+                  <p>R$20,00</p>
+                </div>
+                <div class="opcoes-compra">
+                  <button>
+                    <i class="fa fa-cart-plus"></i>
+                  </button>
+                  <input
+                    type="checkbox"
+                    name="hamburguerduplo"
+                    id="hamburguerduplo"
+                  />
+                </div>
+              </a>
+            </div>
+            <!--ITEM 3-->
+            <div class="crispychicken menu-item">
+              <a href="#" class="menu">
+                <div class="menu-content">
+                  <h3>Crispy Chicken</h3>
+                  <img src="src/icons/crispychicken.png" alt="crispychicken" />
+                  <p>
+                    Sanduiche composto por carne 100% de peito de frango com queijo
+                    cheddar, temperada e empanada, maionese, alface americana e
+                    tomate.
+                  </p>
+                  <p>R$25,00</p>
+                </div>
+                <div class="opcoes-compra">
+                  <button>
+                    <i class="fa fa-cart-plus"></i>
+                  </button>
+                  <input
+                  type="checkbox"
+                  name="crispy_chicken"
+                  id="combo_individual"
+                                />
+                </div>
+              </a>
+            </div>
+            <!--ITEM 4-->
+            <div class="chicken_duplo menu-item">
+              <a href="#" class="menu">
+                <div class="menu-content">
+                  <h3>Chicken Duplo</h3>
+                  <img src="src/icons/chickenduplo.png" alt="chicken_duplo" />
+                  <p>
+                    Sanduiche composto 2 carnes 100% de peito de frango, temperada e
+                    empanada, maionese, alface americana e tomate.
+                  </p>
+                  <p>R$30,00</p>
+                </div>
+                <div class="opcoes-compra">
+                  <button>
+                    <i class="fa fa-cart-plus"></i>
+                  </button>
+                  <input type="checkbox" name="chicken_duplo" id="chicken_duplo" />
+                </div>
+              </a>
+            </div>
+            <!--ITEM 5-->
+            <div class="hamburgue_onionrings menu-item">
+              <a href="#" class="menu">
+                <div class="menu-content">
+                  <h3>Hamburguer Cebola</h3>
+                  <img src="src/icons/onionrings.png" alt="hamburguer_onionrings" />
+                  <p>
+                    Pão com gergelim, um suculento hambúrguer de pura carne
+                    bovina,molho barbecue, 6 deliciosas onion rings, molho de queijo
+                    e maionese.
+                  </p>
+                  <p>30,00</p>
+                </div>
+                <div class="opcoes-compra">
+                  <button>
+                    <i class="fa fa-cart-plus"></i>
+                  </button>
+                  <input
+                  type="checkbox"
+                  name="hamburgue_onionrings"
+                  id="hamburgue_onionrings"
+                                />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Criado por <a href="https://github.com/yukitzz">Thajla Lawane &copy;</a> </p>
+    </f>
   </body>
 </html>
