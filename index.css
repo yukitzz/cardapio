@@ -176,6 +176,16 @@
     justify-content: center;
     margin-top: 20px;
   }
+
+  .acompanhamentos{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: center;
+    margin-top: 20px;
+  }
   
   .menu {
     color: rgb(230, 151, 5);

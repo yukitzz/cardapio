@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: "Playfair Display", sans-serif;
+    color-scheme: only dark;
+  }
+  :root {
+    --espaco-sidebar__tittles: 0.5rem;
+  }
+  html,
+  body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  .sidebar_home {
+    background-image: url("src/icons/fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    font-weight: 100%;
+    min-height: 87vh;
+  }
+
+  .sidebar__informations_home {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.8rem;
+    padding-block: 1rem;
+    padding-inline: 2.5rem;
+    margin: 0 auto;
+    margin-block: auto;
+    min-height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar__content_home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content__container_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  #principal-tittle {
+    margin-block: var(--espaco-sidebar__tittles);
+    font-size: 2.4rem;
+  }
+
+  #secondary-tittle {
+    margin-block: var(--espaco-sidebar__tittles);
+    font-size: 1.1rem;
+    color: rgb(206, 206, 206);
+  }
+
+  .sidebar__tittles_home {
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+  }
+
+  .nav-links_home {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .nav-links_home #home a i,
+  .nav-links_home #menu a i {
+    font-size: 1rem;
+    transition: color 0.3s ease-in 0s;
+  }
+  
+  .nav-links_home #home a i:hover,
+  .nav-links_home #menu a i:hover {
+    color: white;
+    scale: 1.1;
+  }
+  
+  .nav-links_home li a {
+    color: darkgray;
+    text-decoration: none;
+  }
+  .logo_home {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .logo_home a img {
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    margin-block: auto;
+    transition: scale 0.3s ease-in-out 0s;
+  }
+  .logo_home a img:hover {
+    scale: 1.2;
+  }
+  .logo_home a {
+    display: flex;
+    margin-right: 10px;
+  }
+  .logo_home img {
+    width: 13rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 15%;
+  }
+  footer{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 15vh;
+    padding: 0;
+    background-color: rgb(53, 52, 52);
+    margin: 0% 0 0 0;
+    text-shadow: .15rem .15rem .1rem rgba(0, 0, 0);
+    letter-spacing: .1rem;
+}
+
+footer p a {
+    color: #d38d81d5;
+    font-weight: bold;
+}
